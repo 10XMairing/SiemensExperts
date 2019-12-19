@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#F8F5F5"
+    android:id="@+id/name_layout"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -58,19 +59,69 @@
             android:id="@+id/iv_advertisement_image"
             android:src="@color/colorPrimary"/>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp">
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:text="Buy this item"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:id="@+id/btn_buy"
-            android:fontFamily="@font/roboto"
-            app:cornerRadius="5dp"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="#5084DE"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_toLeftOf="@id/btn_buy"
+                    android:text="Add to Cart"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    android:id="@+id/btn_cart"
+                    android:fontFamily="@font/roboto"
+                    app:cornerRadius="5dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorPrimary"/>
+
+
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:text="Buy this item"
+                        android:textAllCaps="false"
+                        android:textSize="14sp"
+                        android:id="@+id/btn_buy"
+                        android:fontFamily="@font/roboto"
+                        app:cornerRadius="5dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/colorPrimary"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
 
     </LinearLayout>
 

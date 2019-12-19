@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:id="@+id/layout"
+    android:scrollbars="none"
+    tools:context=".ui.business.funcnatilies.newArticle.BusinessNewArticleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/editTextStyle"
+        android:id="@+id/line1"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"
+            android:hint="@string/edittext_product_name"
+            android:id="@+id/product_name"
+            android:layout_height="40dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/editTextStyle"
+        android:id="@+id/line2"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"
+            android:hint="@string/edittext_product_price"
+            android:id="@+id/product_price"
+            android:layout_height="40dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editTextStyle"
+            android:id="@+id/line4"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:fontFamily="@font/roboto"
+                android:textSize="16sp"
+                android:hint="@string/edittext_product_price"
+                android:id="@+id/product_discount"
+                android:layout_height="40dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+        style="@style/editTextStyle"
+        android:id="@+id/line3"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:hint="@string/edittext_product_description"
+            android:id="@+id/product_descriptionm"
+            android:layout_height="120dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/iv_equipments_image"
+        android:src="@color/colorAccent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="2dp"
+            android:backgroundTint="#5084DE"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Add an image"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:id="@+id/image_btn"
+            android:textColor="#FAFAFA"
+            android:textSize="14sp"
+            android:padding="0dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            app:cornerRadius="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:backgroundTint="#5084DE"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Post article"
+            android:gravity="center"
+            android:fontFamily="@font/roboto"
+            android:id="@+id/btn_upload"
+            android:textColor="#FAFAFA"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/spin_kit"
+            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

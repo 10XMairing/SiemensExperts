@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--purple darken 4-->
-    <color name="colorPrimary">#90C268</color>
+    <color name="colorPrimary">#2979FF</color>
 
-    <color name="colorPrimaryDark">#2C2C2E</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimaryDark">#2962FF</color>
+    <color name="colorAccent">#FF4081</color>
     <color name="nav_home">#4527a0</color>
     <color name="nav_events">#AB47BC</color>
     <color name="nav_schedule">#0277bd</color>
@@ -15,7 +15,27 @@
 
 
     <color name="text_colour">#272727</color>
-    <color name="background_colour">#E5E5E5</color>
+    <color name="background_colour">#E0E0E0</color>
     <color name="title_bar_color">#EDF8EC</color>
+
+
+
+    <color name="md_cyan">#18FFFF</color>
+    <color name="md_purple">#AA00FF</color>
+    <color name="md_pink">#FF4081</color>
+    <color name="md_light_green">#B2FF59</color>
+    <color name="md_blue">#2962FF</color>
+
+
+
+    <color name="org_colorPrimary">#90C268</color>
+    <color name="org_colorPrimaryDark">#2C2C2E</color>
+    <color name="org_colorAccent">#D81B60</color>
+
+
+
+
+    <color name="bg_org">#F8F5F5</color>
+    <color name="bg_white">#EDE7F6</color>
 
 </resources>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:backgroundTint="#ffffff"
-    android:background="@drawable/card_bg"
+    android:background="@drawable/card_bg_white"
     android:layout_margin="8dp"
     android:padding="10dp">
 
@@ -20,41 +20,72 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product"
         android:id="@+id/tv_manufactuerer"
         android:textColor="#746F6F"
         android:fontFamily="@font/roboto"
         android:textSize="14sp"
         android:layout_marginTop="5dp"
         android:text="Texas Instruments"/>
+
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
+        android:gravity="left"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_price"
+        android:id="@+id/tv_price_first"
         android:textColor="#746F6F"
+        android:layout_alignParentRight="true"
         android:fontFamily="@font/roboto"
-        android:textSize="14sp"
-        android:layout_marginTop="5dp"
-        android:text="Price: 500 per day"/>
+        android:textSize="12sp"
+        android:text="PRICE: "/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
+        android:gravity="left"
         android:layout_height="wrap_content"
+        android:id="@+id/tv_price_main"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/tv_price_first"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="20sp"
+        android:text="&#8377; 500"/>
+    <TextView
+        android:layout_width="50dp"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_price_suffix"
+        android:layout_below="@+id/tv_price_main"
+        android:textColor="#746F6F"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/roboto"
+        android:textSize="12sp"
+        android:text="per day"/>
+
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
         android:id="@+id/tv_location"
+        android:layout_below="@+id/tv_manufactuerer"
         android:textColor="#746F6F"
         android:fontFamily="@font/roboto"
         android:textSize="14sp"
-        android:layout_marginTop="5dp"
-        android:text="Location : Guwahati"/>
+        android:layout_marginTop="8dp"
+        android:text="Guwahati"
+        android:layout_height="wrap_content" />
 
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_gravity="center"
+        android:layout_below="@+id/tv_location"
         android:layout_marginTop="15dp"
         android:id="@+id/iv_equipments_image"
         android:src="@color/colorPrimary"/>
 
     <RelativeLayout
+        android:layout_below="@+id/iv_equipments_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -101,4 +132,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>

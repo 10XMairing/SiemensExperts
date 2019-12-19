@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">XCom</string>
+    <string name="app_name">AGtech Business</string>
     <string name="botnav_menu_about">About</string>
     <string name="botnav_menu_schedule">Schedule</string>
     <string name="botnav_menu_events">Events</string>
@@ -12,8 +12,24 @@
 
     <string name="edittext_email"><font size="12">Email</font></string>
     <string name="edittext_password"><font size="12">Password</font></string>
-    <string name="edittext_cnf_password"><font size="12">Confirm Password</font></string>
+    <string name="edittext_cnf_password"><font size="12">Full Name</font></string>
 
+    <string name="edittext_location"><font size="8">Location</font></string>
+    <string name="edittext_time"><font size="8">Time</font></string>
+    <string name="edittext_special_requirements"><font size="8">Special Requirements</font></string>
+
+    <string name="edittext_add_title"><font size="12">Title</font></string>
+    <string name="edittext_add_description"><font size="12">Body</font></string>
+
+    <string name="edittext_product_name"><font size="12">Name</font></string>
+    <string name="edittext_product_price"><font size="12">Price</font></string>
+    <string name="edittext_product_description"><font size="12">Description</font></string>
+    <string name="edittext_product_discount"><font size="12">Discount</font></string>
+
+    <string name="edittext_buy_name"><font size="12">Name</font></string>
+    <string name="edittext_buy_location"><font size="12">Location</font></string>
+    <string name="edittext_buy"><font size="12">Pin no</font></string>
+    <string name="edittext_buy_phone_no"><font size="12">Phone no</font></string>
 
 
 </resources>

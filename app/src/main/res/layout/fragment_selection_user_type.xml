@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.github.tenx.xservices.ui.auth.selection.SelectionUserTypeFragment">
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button"
+        app:cornerRadius="2dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#5084DE"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Continue as Expert"
+        android:gravity="center"
+        android:fontFamily="@font/roboto"
+        android:id="@+id/login_expert"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button"
+        app:cornerRadius="2dp"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/roboto"
+        android:backgroundTint="#962ED1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Continue as Services"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/login_services"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

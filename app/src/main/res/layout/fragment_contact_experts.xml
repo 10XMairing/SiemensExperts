@@ -27,7 +27,7 @@
             android:id="@+id/locationText"
             android:textSize="14sp"
             android:fontFamily="@font/roboto"
-            android:background="@drawable/cardbg_stroke" />
+            android:background="@drawable/card_bg_white_radius" />
 
 
         <ImageView
@@ -35,7 +35,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1.5"
-            android:background="@drawable/cardbg_stroke"
+            android:background="@drawable/card_bg_white_radius"
             android:layout_marginLeft="10dp"
             android:padding="8dp"
             android:src="@drawable/ic_my_location"

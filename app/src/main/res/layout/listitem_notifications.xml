@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/card_bg_white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:id="@+id/profile_pic"
+                    android:layout_height="60dp"
+                    android:src="@color/colorPrimary"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_name"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:textColor="@color/text_colour"
+                android:text="Name of the person"/>
+
+            <TextView
+                android:padding="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_notifications_type"
+                android:textColor="#746F6F"
+                android:fontFamily="@font/roboto"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:text="Subject of the notifications"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

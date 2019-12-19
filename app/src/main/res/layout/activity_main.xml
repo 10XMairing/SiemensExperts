@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@color/background_colour"
+    android:backgroundTint="@color/bg_white"
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity">
 
@@ -36,10 +36,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recycler_view"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="10dp"
         tools:listitem="@layout/listitem_home">
 
 
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For you"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view2"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="10dp"
+        tools:listitem="@layout/listitem_home">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
 
 </LinearLayout>
