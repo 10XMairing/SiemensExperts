@@ -31,7 +31,6 @@ public interface EventsApiService {
     @POST("api/business/login")
     Observable<Response<RegistrationResponseService>> loginService(@Body LoginBody body);
 
-
     @GET("api/appointment/expert/me")
     Observable<Response<ExpertAppointmentsResponse>> getAppointmentsForExpert();
 
