@@ -15,6 +15,8 @@ import com.github.tenx.xservices.ui.business.main.recyclerView.HomePageAdapter2;
 import com.github.tenx.xservices.ui.main.recyclerView.HomePageAdapter;
 import com.github.tenx.xservices.ui.main.recyclerView.HomePageItemsModel;
 import com.github.tenx.xservices.utils.Constants;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -106,6 +108,8 @@ public class BusinessMainActivity extends AppCompatActivity {
 
 
 
+
+
     }
 
     private void setUpRecycler2(RecyclerView recyclerView, HomePageAdapter2 adapter2) {
@@ -139,7 +143,7 @@ public class BusinessMainActivity extends AppCompatActivity {
         startActivity(intent);
 
         CustomIntent.customType(this,"left-to-right");
-
+        setUpNotification();
 
     }
 
@@ -169,6 +173,27 @@ public class BusinessMainActivity extends AppCompatActivity {
         itemList.add(new HomePageItemsModel(R.drawable.ic_mode_edit_black_24dp,"My Articles"));
         itemList.add(new HomePageItemsModel(R.drawable.ic_notification_purple,"Notifications"));
         return itemList;
+    }
+
+    private  void setUpNotification(){
+        Log.d(TAG, "setUpNotification: ");
+        FirebaseInstanceId.getInstance().getInstanceId()
+                .addOnCompleteListener(task -> {
+                    if (!task.isSuccessful()) {
+                        Log.w(TAG, "getInstanceId failed", task.getException());
+                        return;
+                    }
+
+                    // Get new Instance ID token
+                    String token = task.getResult().getToken();
+                    mainViewModel.uploadToken(token);
+
+                    Timber.d("Generated Token : "+token);
+//                        send to server
+                });
+        FirebaseMessaging.getInstance().subscribeToTopic("business").addOnSuccessListener(msg -> {
+            Timber.d("subscribed to topic : farmer");
+        });
     }
 
 }

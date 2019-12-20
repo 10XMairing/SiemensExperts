@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "236161252036",
+    "firebase_url": "https://agtech-754f5.firebaseio.com",
+    "project_id": "agtech-754f5",
+    "storage_bucket": "agtech-754f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236161252036:android:5a452b841693d29736e791",
+        "android_client_info": {
+          "package_name": "com.github.tenx.agtechfarmer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236161252036-o7t4vj8ps2v8c5arski419g88ocsr0gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzk6kJd_SiQH5QREyG4aAku3fj3Bt_EeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236161252036-o7t4vj8ps2v8c5arski419g88ocsr0gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236161252036:android:c4839822bc01237b36e791",
+        "android_client_info": {
+          "package_name": "com.github.tenx.xservices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236161252036-o7t4vj8ps2v8c5arski419g88ocsr0gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzk6kJd_SiQH5QREyG4aAku3fj3Bt_EeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236161252036-o7t4vj8ps2v8c5arski419g88ocsr0gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

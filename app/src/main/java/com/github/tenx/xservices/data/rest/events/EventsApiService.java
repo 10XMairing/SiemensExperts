@@ -8,12 +8,16 @@ import com.github.tenx.xservices.data.models.auth.LoginBody;
 import com.github.tenx.xservices.data.models.auth.RegistrationBody;
 import com.github.tenx.xservices.data.models.auth.RegistrationResponseExpert;
 import com.github.tenx.xservices.data.models.auth.RegistrationResponseService;
+import com.github.tenx.xservices.data.models.auth.UpdateExpertBody;
 import com.github.tenx.xservices.data.models.products.ProductsBody;
+
+import org.json.JSONObject;
 
 import io.reactivex.Observable;
 import retrofit2.Response;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.PATCH;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
@@ -21,6 +25,9 @@ public interface EventsApiService {
 
     @POST("api/expert/register")
     Observable<Response<RegistrationResponseExpert>> registerExpert(@Body RegistrationBody body);
+
+    @PATCH("api/expert/update/me")
+    Observable<Response<JSONObject>> updateExpertprofile(@Body UpdateExpertBody body);
 
     @POST("api/expert/login")
     Observable<Response<RegistrationResponseExpert>> loginExpert(@Body LoginBody body);

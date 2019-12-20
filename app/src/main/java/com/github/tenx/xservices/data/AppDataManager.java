@@ -10,10 +10,13 @@ import com.github.tenx.xservices.data.models.auth.LoginBody;
 import com.github.tenx.xservices.data.models.auth.RegistrationBody;
 import com.github.tenx.xservices.data.models.auth.RegistrationResponseExpert;
 import com.github.tenx.xservices.data.models.auth.RegistrationResponseService;
+import com.github.tenx.xservices.data.models.auth.UpdateExpertBody;
 import com.github.tenx.xservices.data.models.products.ProductsBody;
 import com.github.tenx.xservices.data.prefs.AppPreferencesHelper;
 import com.github.tenx.xservices.data.rest.events.AppEventHelper;
 import com.github.tenx.xservices.di.scopes.ApplicationContext;
+
+import org.json.JSONObject;
 
 import javax.inject.Inject;
 
@@ -36,6 +39,11 @@ public class AppDataManager implements  AppDataManagerHelper{
         this.preferencesHelper = preferencesHelper;
     }
 
+
+    @Override
+    public Observable<Response<JSONObject>> updateExpertprofile(UpdateExpertBody body) {
+        return eventHelper.updateExpertprofile(body);
+    }
 
     @Override
     public Observable<Response<RegistrationResponseExpert>> registerExpert(RegistrationBody body) {

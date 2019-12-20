@@ -8,7 +8,10 @@ import com.github.tenx.xservices.data.models.auth.LoginBody;
 import com.github.tenx.xservices.data.models.auth.RegistrationBody;
 import com.github.tenx.xservices.data.models.auth.RegistrationResponseExpert;
 import com.github.tenx.xservices.data.models.auth.RegistrationResponseService;
+import com.github.tenx.xservices.data.models.auth.UpdateExpertBody;
 import com.github.tenx.xservices.data.models.products.ProductsBody;
+
+import org.json.JSONObject;
 
 import javax.inject.Inject;
 
@@ -29,6 +32,11 @@ public class AppEventHelper implements  EventsApiService {
     @Override
     public Observable<Response<RegistrationResponseExpert>> registerExpert(RegistrationBody body) {
         return api.registerExpert(body);
+    }
+
+    @Override
+    public Observable<Response<JSONObject>> updateExpertprofile(UpdateExpertBody body) {
+        return api.updateExpertprofile(body);
     }
 
     @Override

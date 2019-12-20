@@ -17,6 +17,8 @@ import com.github.tenx.xservices.ui.main.recyclerView.HomePageAdapter;
 import com.github.tenx.xservices.ui.main.recyclerView.HomePageAdapter2;
 import com.github.tenx.xservices.ui.main.recyclerView.HomePageItemsModel;
 import com.github.tenx.xservices.utils.Constants;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -133,6 +135,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+
+
     }
 
 
@@ -168,6 +172,9 @@ public class MainActivity extends AppCompatActivity {
         itemList.add(new HomePageItemsModel(R.drawable.ic_receipt_black_24dp,"Appointments"));
         return itemList;
     }
+
+
+
 
 
 }

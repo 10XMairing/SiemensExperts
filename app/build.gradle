@@ -106,5 +106,11 @@ dependencies {
     //    interceptor
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
 
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    //    notifications
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+
 
 }
+
+apply plugin: 'com.google.gms.google-services'
