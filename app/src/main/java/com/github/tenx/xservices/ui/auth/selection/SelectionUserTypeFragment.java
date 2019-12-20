@@ -29,8 +29,8 @@ public class SelectionUserTypeFragment extends Fragment {
 
     @BindView(R.id.login_expert)
     MaterialButton loginExpert;
-    @BindView(R.id.login_services)
-    MaterialButton loginServices;
+
+
 
     @Inject
     RegistrationFragment registrationFragment;
@@ -61,15 +61,13 @@ public class SelectionUserTypeFragment extends Fragment {
         super.onAttach(context);
     }
 
-    @OnClick({R.id.login_expert, R.id.login_services})
+    @OnClick({R.id.login_expert})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.login_expert:
                 nextFrag("Expert");
                 break;
-            case R.id.login_services:
-                nextFrag("Service");
-                break;
+
         }
     }
 
